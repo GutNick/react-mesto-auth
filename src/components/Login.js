@@ -21,8 +21,8 @@ function Login(props) {
         <section className="authorization" onSubmit={handleSubmit}>
             <h2 className="authorization__title">Вход</h2>
             <form className="form authorization__form">
-                <input type="email" className="form__input" placeholder="Email" autoComplete="username" onChange={handleChange} required />
-                <input type="password" className="form__input" placeholder="Пароль" autoComplete="current-password" id="current-password" onChange={handleChange} required />
+                <input type="email" className="form__input" placeholder="Email" autoComplete="username" value={email} onChange={handleChange} required />
+                <input type="password" className="form__input" placeholder="Пароль" autoComplete="current-password" value={password} id="current-password" onChange={handleChange} required />
                 <button type="submit" className="form__submit">Войти</button>
             </form>
         </section>
